@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>    
+  </header>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>If you'd like to contact me, feel free to reach out via email.</p>
+      <!--
+      <p>If you'd like to contact me, feel free to reach out using the form below or via email.</p>
+      
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      
+        <button type="submit">Send Message</button>
+      </form>
+      -->
+    </section>
+
+    <section>
+      <h2>Email</h2>
+      <p>You can also email me directly at: <a href="mailto:dominique.plante@gmail.com">dominique.plante@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dominique Plante. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+  
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+  
+      // Construct the mailto URL
+      const subject = encodeURIComponent('Contact Form Submission');
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+      const mailtoUrl = `mailto:dominique.plante@gmail.com?subject=${subject}&body=${body}`;
+  
+      // Open the mailto URL in a new window
+      window.open(mailtoUrl, '_blank');
+    });
+  </script>
+</body>
+</html>
