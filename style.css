@@ -6,19 +6,25 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #F4F4F4; /* Light gray background */
+  color: #333333; /* Dark gray text */
 }
 
 header {
-  background: #333;
-  color: #fff;
+  background: #87CEEB; /* Soft blue */
+  color: #FFFFFF; /* White text */
   padding: 1rem 0;
   text-align: center;
 }
 
+/* Main Content Styles */
 main {
   padding: 20px;
+  background-color: #FFFFFF; /* White background */
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -26,7 +32,7 @@ section {
 }
 
 h2 {
-  color: #333;
+  color: #87CEEB; /* Soft blue */
 }
 
 a {
@@ -41,8 +47,8 @@ a:hover {
 footer {
   text-align: center;
   padding: 10px;
-  background: #333;
-  color: #fff;
+  background-color: #87CEEB; /* Soft blue */
+  color: #FFFFFF; /* White text */
   position: relative;
   bottom: 0;
   width: 100%;
@@ -82,7 +88,7 @@ button:hover {
 }
 
 nav {
-  background-color: #666;
+  background-color: #a5aeb1; /* Soft blue */
   color: white;
   text-align: center;
   padding: 10px;
@@ -95,7 +101,7 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: #666;
+  background-color: #a5aeb1; /* Soft blue */
 }
 
 nav ul li {
